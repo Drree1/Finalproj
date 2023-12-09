@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Part 6</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</head>
+
+<body>
+    <h1>Speedy Health</h1>
+    <header>
+        <div id="navbar">
+            <img id="logo" src="healthimg.png">
+
+            <div id="hamburger" class="hide-large">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="nav-items" class="hide-small">
+                <li><a href="index.html"><i class="fa fa-fw fa-home"></i> <b>Home</b></a></li>
+                <li><a href="about.html"><i class="fa fa-fw fa-address-card"></i> <b>About Us</b></a></li>
+                <li><a href="info.html"><i class="fa fa-fw fa-book"></i> <b>Info</b></a></li>
+                <li><a href="contact.html"><i class="fa fa-fw fa-envelope"></i> <b>Contact Us</b></a></li>
+                <li><a href="form.html"><i class="fa fa-fw fa-form"></i> <b>Request Forms</b></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="background-speedy parallax parallax2">
+            <section class="content-box content-box2">
+                <h3 id="speedy-header">Contact Us</h3>
+                <p>If you have any questions or concerns you can fill out the form below and we will be in touch.  </p>
+          
+            </section>
+        </section>
+        <section class="text-section ">
+            <div class=" text-section">
+                <div class="parallax parallax3"></div>
+            </div>
+            
+        </section>
+        <section class="background-speedy parallax">
+            <section class="content-box content-box2">
+                <h3 id="speedy-header">Contact Us</h3>
+                <form
+                 id="contact-form"
+                 action="https://api.web3forms.com/submit"
+                 method="POST"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value= "deandraegraham1@gmail.com"
+          />
+
+          <p>
+            <label for="name">Full Name:</label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              required
+            />
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" required />
+          </p>
+          <p>
+            <label for="message">Questions/Concerns:</label>
+            <textarea id="message" name="message" required></textarea>
+          </p>
+          <input
+            type="hidden"
+            name="redirect"
+            value="https://web3forms.com/success"
+          />
+          <input
+            type="hidden"
+            name="subject"
+            value="Contact from Speedy Health"
+          />
+          <input type="hidden" name="from_name" value="My Website" />
+
+          <p>
+            <button type="submit">Submit Form</button>
+          </p>
+
+          <p id="result"></p>
+        </form>
+            </section>
+        </section>
+        <section class="text-section ">
+            <div class="text-section">
+                <div class="parallax parallax4"></div>
+                
+            </div>
+            
+        </section>
+
+        
+    </main>
+</body>
+
+</html>
